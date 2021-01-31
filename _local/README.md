@@ -13,10 +13,13 @@ make
 (inv)  < - command that's run
    |
    |
-   ----> (base alias) for investigate command.  calling source shifts users pwd
+   ----> (base alias) for investigate command.  calling source shifts
+          users pwd
               |
               |
-              -----> (investigate) creates folder, using format YYYYMMDD-(DESCRIPTION), creates .invnotes file with some simple details
+              -----> (investigate) creates folder, 
+                      using format YYYYMMDD-(DESCRIPTION), 
+                      creates .invnotes file with some simple details
 ```
 
 
