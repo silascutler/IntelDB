@@ -4,12 +4,12 @@
 
 
 NAME=$1
-SOURCE=$2
+NOTES=$2
 YEAR=$3
 MONTH=$4
 
 # Not Released yet
-#COMMAND='inteldb-query -a -inv $NAME -n "Source: '$SOURCE'" -z "{\"MONTH\": \"'$MONTH'\", \"YEAR\": \"'$YEAR'\"}"'
+#COMMAND='inteldb-query -a -inv $NAME -n "Notes: '$NOTES'" -z "{\"MONTH\": \"'$MONTH'\", \"YEAR\": \"'$YEAR'\"}"'
 #eval $COMMAND
 
 

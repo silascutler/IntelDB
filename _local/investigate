@@ -4,21 +4,21 @@
 
 if [ $# -eq 1 ]
 then
-        echo -n "Source: "
-        read SOURCE
+        echo -n "Notes: "
+        read NOTES
         NAME=$1
 else
         NAME=$2
-        SOURCE=$1
+        NOTES=$1
 fi
 
 DATE=`date +%Y%m%d`
 mkdir $DATE-$NAME
 cd $DATE-$NAME
-log_investigation $DATE-$NAME "$SOURCE" `date +%Y` `date +%m`
+log_investigation $DATE-$NAME "$NOTES" `date +%Y` `date +%m`
 
 echo "Name: $DATE-$NAME" > .invnotes
-echo "Source: $SOURCE" >> .invnotes
+echo "Notes: $NOTES" >> .invnotes
 echo "Date: $DATE" >> .invnotes
 echo "Hostname: $(hostname)" >> .invnotes
 
