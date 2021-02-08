@@ -26,9 +26,9 @@ class link_store():
     def __init__(self):
         print("Creating Link DB Handle")
         self.link_db = MySQLdb.connect(
-            host="172.16.100.11", 
-            user="user_intel_link_db", 
-            passwd="M5DHogMVWccn1lrBIzUuIWq5BkIB1H", 
+            host="127.0.0.1", 
+            user="root", 
+            passwd="", 
             db="intel_link_db")
 
         self.link_db.autocommit(True)
@@ -135,7 +135,7 @@ class mongo_store():
 
     def __init__(self, rtype=""):
         print("Creating Indicator DB Handle")
-        self.dbclient = pymongo.MongoClient("172.16.100.11")
+        self.dbclient = pymongo.MongoClient("127.0.0.1")
         self.db = self.dbclient['inteldb']
         self.collection = self.db[rtype]
 
