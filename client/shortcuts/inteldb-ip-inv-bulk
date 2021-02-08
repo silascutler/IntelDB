@@ -1,8 +1,0 @@
-#!/bin/bash
-
-for IP in `cat $1`; do
-	if [[ !  -z  $IP  ]];
-	then
-		inteldb-ip-inv $IP \'$2\'
-	fi
-done
