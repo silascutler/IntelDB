@@ -1,0 +1,7 @@
+User-agent: Baiduspider
+Disallow: /fonts
+Disallow: /css
+Disallow: /js
+Disallow: /backgrounds
+Disallow: /
+

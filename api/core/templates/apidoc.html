@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                        <div class="navbar-inner">
+                                <div class="container">
+                                <a class="brand" href="{{ url_for('index') }}">IntelDB</a>
+                                <div class="nav-collapse collapse">
+                                        <ul class="nav">
+                                                <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+                                                <li><a href="#">Search</a></li>
+                                                <li><a href="#">Add</a></li>
+                                                <li><a href="#">Bulk Add</a></li>
+                                                <li><a href="#">API Syntax</a></li>
+
+                                        </ul>
+                                </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="container">
+                        <div class="jumbotron">
+                        <p class="lead">###</p>
+                        <table class="table table-striped" width="647">
+
+/ <br /> 
+/add <br />
+/r_add <br />
+<br />
+/link <br />
+<br />
+/search <br />
+/lsearch <br />
+<br />
+#### Modules #### <br />
+<br />
+/module/resolver/pull <br />
+<br />
+/module/resolver/submit <br />
+<br />
+/module/list/new_ip <br />
+/module/list/domain <br />
+/module/list/active <br />
+<br />
+
+			</table>
+
+                        </div>
+                </div>
+
+{% endblock %}
