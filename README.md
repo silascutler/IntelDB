@@ -3,6 +3,7 @@
 IntelDB is an open-source, minimal framework for collecting, storing and searching threat indicators, designed for individuals and small teams.  The system is type agnostic (does not include predefined indicator types) in order to allow for dynamic storage of unique artifacts. 
 
 
+(Very much a work in progress)
 
 
 
