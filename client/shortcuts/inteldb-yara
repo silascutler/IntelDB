@@ -1,8 +1,0 @@
-#!/bin/bash
-
-YRULE=$1
-
-COMMAND='inteldb-query $2 -q -r -f "{ \"details.yara\" : { \"\$regex\": \"'$YRULE'\" , \"\$options\" : \"i\" } }" '
-eval $COMMAND
-
-
