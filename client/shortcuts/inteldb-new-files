@@ -1,0 +1,9 @@
+#!/bin/bash
+
+RDATE=$(date --date='1 days ago' +%s)
+
+
+COMMAND='inteldb-query -q -r -f "{ \"'added'\": { \"\$gt\": '$RDATE' }}" '$1
+eval $COMMAND
+
+

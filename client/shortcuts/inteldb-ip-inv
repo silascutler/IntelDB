@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ADDR=$1
+NOTE=$2
+
+COMMAND="inteldb-query -a -i $ADDR -n \"$NOTE\" "
+eval $COMMAND
+
+DIR=$(pwd)
+COMMAND="inteldb-query -a -i $ADDR -n \"$DIR\" "
+eval $COMMAND
+
+LINV=$(pwd| egrep -o "\/[0-9]{,10}\-(.*?)\/?" | sed "s/\///g" | awk '{print tolower($0)}')
+COMMAND="inteldb-query -c -inv $LINV -li2 $ADDR "
+eval $COMMAND
+
+

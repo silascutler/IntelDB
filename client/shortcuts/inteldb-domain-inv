@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DOMAIN=$1
+NOTE=$2
+
+COMMAND="inteldb-query $3 -a -d $DOMAIN -n \"$NOTE\" -z '{}'"
+eval $COMMAND
+
+DIR=$(pwd)
+COMMAND="inteldb-query $3 -a -d $DOMAIN -n \"$DIR\" "
+eval $COMMAND
+

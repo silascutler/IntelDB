@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ADDR=$1
+NOTE=$2
+
+COMMAND="inteldb-query -a -i $ADDR -n \"$NOTE\" -z '{\"NOACTION\":1}' "$3
+eval $COMMAND
+
+DIR=$(pwd)
+COMMAND="inteldb-query -a -i $ADDR -n \"$DIR\" "$3
+eval $COMMAND
+

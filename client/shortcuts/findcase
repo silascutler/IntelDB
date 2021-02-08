@@ -1,0 +1,3 @@
+#!/bin/bash
+
+inteldb-query -q -inv $1 -x

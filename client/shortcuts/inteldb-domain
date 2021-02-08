@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DOMAIN=$1
+NOTE=$2
+
+COMMAND="inteldb-query $3 -a -d $DOMAIN -n \"$NOTE\" -z '{}'"
+eval $COMMAND
+
